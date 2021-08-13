@@ -1,6 +1,6 @@
 ## Dumb Bot Source Code
 Dumb Bot is A MultiPurpose Discord Bot with 214 Commands And 85% Of Database is Based on quick.db
-
+I am Wishing That Adamjr Will see this so please star it @admamjr
 ## Features 
 This bot Also Supports Many Slash-Commands
 This Bot Supports :
