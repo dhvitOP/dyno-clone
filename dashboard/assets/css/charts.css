@@ -1,0 +1,37 @@
+.charts {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.charts svg {
+  display: flex;
+  float: left;
+}
+
+.ct-series-a .ct-line,
+.ct-series-a .ct-point {
+  stroke: var(--success);
+  stroke-width: 4px;
+}
+.ct-series-b .ct-line,
+.ct-series-b .ct-point {
+  stroke: var(--danger);
+  stroke-width: 4px;
+}
+
+.ct-series-a .ct-area {
+  fill: var(--success);
+}
+.ct-series-b .ct-area {
+  fill: var(--danger);
+}
+
+.ct-grids line,
+.ct-labels span,
+.ct-grid.ct-horizontal {
+  color: var(--font);
+}
+.ct-grid {
+  stroke: transparent;
+}

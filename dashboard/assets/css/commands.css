@@ -1,0 +1,20 @@
+#search {
+  max-width: 300px;
+}
+#search + button {
+  height: 64px;
+}
+
+li {
+  cursor: pointer;
+}
+
+.commands li {
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid var(--font) !important;
+}
+
+.list-group-item {
+  background-color: inherit;
+}

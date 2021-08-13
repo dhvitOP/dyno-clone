@@ -1,0 +1,21 @@
+section#auditLogModule.module.container.px-5
+  .jumbotron.bg-transparent.pb-0
+    h1.display-4.text-center Audit Log
+  .px-5.mt-5.d-flex
+    table.table.table-responsive-xl
+      thead
+        tr
+          th(scope='col') #
+          th(scope='col') At
+          th(scope='col') By
+          th(scope='col') Old
+          th(scope='col') New
+      tbody
+        each change, i in savedLog.changes.reverse()
+          tr
+            if i < 3
+              th(scope='row') #{savedLog.changes.length - i}
+              td #{new Date(change.at).toLocaleString()}
+              td #[+user(users.get(change.by))]
+              td #[pre #[code #{JSON.stringify(change.old, null, 2)}]]
+              td #[pre #[code #{JSON.stringify(change.new, null, 2)}]]

@@ -1,0 +1,41 @@
+section#overviewModule.module.px-5
+  .form-group.mt-5
+    .row.text-center
+      .col-lg-3.col-md-6
+        .border.rounded.m-3.p-3
+          p.uppercase
+            i.fas.fa-user-ninja
+            strong.ml-1 Owner
+          p.mb-0 #{guild.owner.user.tag}
+      .col-lg-3.col-md-6
+        .border.rounded.m-3.p-3
+          p.uppercase
+            i.fas.fa-user-alt
+            strong.ml-1 Members
+          p.mb-0 #{guild.memberCount}
+      .col-lg-3.col-md-6
+        .border.rounded.m-3.p-3
+          p.uppercase
+            i.fas.fa-at
+            strong.ml-1 Roles
+          p.mb-0 #{guild.roles.cache.size}
+      .col-lg-3.col-md-6
+        .border.rounded.m-3.p-3
+          p.uppercase
+            i.fas.fa-hashtag
+            strong.ml-1 Channels
+          p.mb-0 #{guild.channels.cache.size}
+
+  .charts.mt-5.px-4
+    .card-dark.float-left
+      h3 Joins/Leaves
+      .joins-chart
+    .card-dark.float-left
+      h3 Punishments
+      .punishments-chart
+    .card-dark.float-left
+      h3 Messages
+      .messages-chart
+    .card-dark.float-left
+      h3 Commands
+      .commands-chart

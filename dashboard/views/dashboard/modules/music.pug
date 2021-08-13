@@ -1,0 +1,38 @@
+section#musicModule.module.container.px-5
+  .jumbotron.bg-transparent.pb-0
+    h1.display-4.text-center Music
+  .form-group.mt-5
+  
+  - const track = ((!player.settings.songs ? 0 : player.settings.songs.length) > 0) ? player.settings.songs[0].title : null;
+  .card.bg-transparent.shadow.p-3
+    #musicAPIError.alert.alert-danger.d-none
+    .card-header.bg-transparent.row
+      .col
+        h5 Player
+        .now-playing
+      .col.mt-5
+        .controls.row
+          .col-3
+          .col-6.buttons
+            button#toggleTrack.btn.text-gradient #[i.fas(class=player.isPaused ? 'fa-play' : 'fa-pause')]
+            button#stopTrack.btn.text-gradient #[i.fas.fa-square]
+            button#skipTrack.btn.text-gradient #[i.fas.fa-forward]
+            button#shuffleList.btn.text-gradient #[i.fas.fa-random]
+          #volume.col-3
+            i.fas.fa-volume-up.text-gradient
+            input.form-control(type='range', value='0', max='1', step='0.1')
+        #seekTrack
+          input.form-control(type='range', value=(Math.floor(player.position || 0) / 1000))
+          .position
+            span.current 00:00
+            span.text-muted.px-1 /
+            span.duration.text-muted 00:00
+
+    .card-body
+      h5 Queue
+      .q-control.mb-3
+        label Search
+          input.form-control
+        button#trackSearch.ml-2.mb-1.btn.btn-gradient +
+      .track-list
+      

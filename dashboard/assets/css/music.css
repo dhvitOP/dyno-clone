@@ -1,0 +1,45 @@
+.card-header img {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.buttons,
+#volume {
+  text-align: center;
+}
+.q-control,
+.position {
+  display: flex;
+  justify-content: center;
+}
+
+.form-control,
+.btn {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.track-list img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#trackSearch {
+  margin-top: 20px;
+  max-height: 42px;
+}
+
+#volume {
+  cursor: pointer;
+}
+#volume input {
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+#volume:hover input {
+  opacity: 1;
+}

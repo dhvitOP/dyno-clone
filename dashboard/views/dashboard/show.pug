@@ -1,0 +1,61 @@
+doctype
+html(lang='en')
+  head
+    include ../includes/header.pug
+    include ../includes/mixins.pug
+
+    script(defer).
+      const commandsLog = [!{savedLog.commands}];
+      const messagesLog = [!{savedLog.messages}];
+      const punishmentsLog = [!{savedLog.punishments}];
+      const joinsLog = [!{savedLog.joins}];
+      const leavesLog = [!{savedLog.leaves}];
+      const guildId = '#{savedGuild.id}';
+      const key = '#{key}';
+
+    script(src='https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js', defer)
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js', defer)
+    script(src='/js/charts.js', defer)
+    script(src='/js/sidebar.js', defer)
+    script(src='/js/guild.js', defer)
+
+    script(src='/js/music/html-music-wrapper.js', defer)
+    script(src='/js/music/music-wrapper.js', defer)
+    script(src='/js/music/music.js', defer)
+
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/ascetic.min.css')
+    link(rel='stylesheet', href='/css/sidebar.css')
+    link(rel='stylesheet', href='/css/charts.css')
+    link(rel='stylesheet', href='/css/music.css')
+  body
+    include ../includes/sidebar.pug
+
+    #sidebarExtension
+      header.text-center.pt-4
+        .large-icon.bg-white.round
+          if guild.icon
+            img.round(src=guild.iconURL({ dynamic: true, size: 128 }), alt=guild.name)
+          else
+            p.abbr #{guild.nameAcronym}
+        h4#overview.pt-2 #{guild.name}
+      .tabs.navbar-nav
+        .category Modules
+        a#autoMod.cursor-pointer #[i.fas.fa-gavel.pr-1.text-muted] Auto-mod
+        a#economy.cursor-pointer #[i.fas.fa-coins.pr-1.text-muted] Economy
+        a#general.cursor-pointer #[i.fas.fa-star.pr-1.text-muted] General
+        a#music.cursor-pointer #[i.fas.fa-music.pr-1.text-muted] Music
+
+        .category Other
+        a#auditLog.cursor-pointer #[i.fas.fa-book.pr-1.text-muted] Audit Log
+        a.cursor-pointer(href='/leaderboard/' + guild.id) #[i.fas.fa-trophy.pr-1.text-muted] Leaderboard
+
+    include ../includes/navbar.pug
+
+    include modules/overview
+    include modules/auto-mod
+    include modules/economy
+    include modules/general
+    include modules/music
+
+    include extensions/audit-log

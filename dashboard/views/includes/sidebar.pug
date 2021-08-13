@@ -1,0 +1,18 @@
+#sidebar.float-left
+  a(href='/dashboard')
+    .icon.round.shadow
+      img.round(alt=user.username, src=user.avatarUrl(64))
+  hr
+  each guild in guilds
+    a(href='/servers/' + guild.id)
+      .icon.round.shadow.my-2(data-toggle='tooltip', data-placement='right', title=guild.name)
+        if guild.icon
+          img.round(alt=guild.name, src=guild.iconURL({ dynamic: true, size: 64 }))
+        else
+          p.text-center.abbr #{guild.nameAcronym}
+  a(href='/invite')
+    .icon
+      p.abbr.text-success.text-center
+        i.fas.fa-plus
+  .hamburger.px-1
+    i.fas.fa-bars

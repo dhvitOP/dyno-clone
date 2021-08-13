@@ -1,0 +1,25 @@
+doctype
+html(lang='en')
+  head
+    include ../includes/header.pug
+
+    link(rel='stylesheet', href='/css/leaderboard.css')
+  body
+    include ../includes/navbar.pug
+    header.text-center
+      h1
+        
+        span #{guildxd.name} Leaderboard
+      p.lead View the top 100 richest users in #{guildxd.name}.
+
+    ul.list-group.container.mt-5
+      each savedUser, index in savedUsers
+        - var user = guildxd.members.cache.get(savedUser.id).user;
+        if user
+          li.list-group-item
+            span
+              strong.round.mr-3 #{index + 1}
+              img.round.user-avatar.mr-2(src=user.displayAvatarURL({ dynamic: true }))
+              span.lead #{user.username}
+              span.text-muted ##{user.discriminator}
+            span.float-right.pt-2 #{savedUser.coins} #[i.fas.fa-coins.text-warning]

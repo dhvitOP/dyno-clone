@@ -1,0 +1,10 @@
+mixin category(category)
+  li.list-group-item(id=category.name) #[i(class=category.icon)] #{category.name}
+
+mixin command(command)
+  li.list-group-item(id=command.name + 'Command', class=command.category) #{command.name}
+
+mixin user(user)
+  span(title=user.id)
+    img.user-avatar.round.mr-2(src=user.displayAvatarURL({ dynamic: true }))
+    h5.d-inline #{user.username}

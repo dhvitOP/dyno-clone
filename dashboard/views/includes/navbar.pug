@@ -1,0 +1,23 @@
+nav.navbar.navbar-expand-lg
+  a.navbar-brand(href='/') 1PG
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbar', aria-controls='navbar', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbar.collapse.navbar-collapse
+    .navbar-nav
+      a.nav-link(href='/commands')
+        i.fas.fa-code
+        span.pl-1 Commands
+    .navbar-nav.ml-auto
+      if user
+        .dropdown
+          .dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            img.user-avatar.round(src=user.avatarUrl(32))
+            span.pl-2 #{user.username}
+          .dropdown-menu.dropdown-menu-right
+            a.dropdown-item(href='/dashboard') #[i.fas.fa-cogs.text-muted] Dashboard
+            hr
+            a.dropdown-item(href='/logout') #[i.fas.fa-user-slash.text-muted] Logout
+      else
+        a.nav-link(href='/login') 
+          i.fas.fa-sign-in-alt
+          span.pl-1 Login

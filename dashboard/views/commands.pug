@@ -1,0 +1,37 @@
+include includes/mixins
+
+doctype
+html(lang='en')
+  head
+    include includes/header.pug
+
+    script(src='https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js', defer)
+    script(src='/js/commands.js', defer)
+    script(defer).
+      let commands = !{commandsString};
+
+    link(rel='stylesheet', href='/css/commands.css')
+  body
+    include includes/navbar.pug
+    .container
+      .jumbotron.text-center.bg-transparent
+        h1.display-3 Commands
+        p.lead View the commands for 1PG.
+        hr
+
+      section#commands
+        .d-flex.justify-content-center
+          #search.form-group.p-3
+            input.form-control(type='search')
+          button.btn
+            i.fas.fa-search
+        .row
+          .col-sm-3.categories
+            ul.list-group.mb-2
+              each category in categories
+                +category(category)
+          .col-sm-9.commands
+            ul.list-group.mb-2
+              each command in commands
+                +command(command)
+              p#commandError
