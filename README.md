@@ -32,12 +32,16 @@ You can Join Our Support Server - [Support Server](https://www.dumb-dsc.tk/suppo
 # Filling Config Files
 Fill the config.js and utils/gw-config.json With Your Credentials
 # Config.js
-```module.exports = {
+```
+module.exports = {
     "registercommands" : false, //Write True If You Are Launching The Bot First Time
      "token": "", //Your Super Secret Bot Token
     "imageapi": "", //Your Amethyste Api You can get it from https://api.amethyste.moe/
     "ownerID": [], //Your Discord User ID
 "prefix": "", //Your Bot's Prefix
+"mongourl": "", // Mongodb url You can see tutorial of it on https://www.youtube.com/watch?v=nj-lJfkgb6w
+"secret": "", // Your super secret bot token You can get it from the section of Oauth2 of Discord Developer Portal named Client Secret
+ "dashboardURL": "", // write https://localhost:3000 if you are hosting in your own pc/laptop and if using website hosting then connect domain and just write that website copy paste in here or enter ip of that hosting server with the port ahead of it
 "chat": {
         "url": "",
         "bid": "",
@@ -70,7 +74,7 @@ mainprefix: "",  // Again Your Prefix
         support: "XXX", //The link of your Discord server
         dperms: "8" //The permissions that the bot asks on we want to add it on a Discord server (8 = moderator)
     }, 
-}
+} 
 ```
 # gw-config.json
 ```{
@@ -92,6 +96,8 @@ mainprefix: "",  // Again Your Prefix
    
 }
 ```
+# Mongodb 
+You can see the tutorial at https://www.youtube.com/watch?v=nj-lJfkgb6w
 # Important Installation
 After Downloading Project in Console Type `npm install` 
 ![terminal](https://user-images.githubusercontent.com/45940386/111021871-b22ee080-83e8-11eb-92cb-c2ff2ccc7b3f.png)
