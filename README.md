@@ -3,6 +3,8 @@ Dumb Bot is A MultiPurpose Discord Bot with 214 Commands And 85% Of Database is 
 I am Wishing That Adamjr Will see this so please star it  [@adamjr](https://github.com/theADAMJR)
 # Preview
 https://dyno-clone.dhvitop.repl.co
+# Contact Us
+https://discord.gg/kBXYKyeWgC Join Discord and My username will be Dhvit
 ## Features 
 This bot Also Supports Many Slash-Commands
 This Bot Supports :
