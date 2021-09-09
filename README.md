@@ -112,7 +112,7 @@ After Installing The Packages in console Type `node xp.js`
 If the Console Shows Port is running on <anything> And Logged in as < Your Bot name>
 **If Your Console Shows Anything from up then Your Bot is ready and you can use it**
 # Error
-if It shows any error Contact us on our [Discord Server](https://www.dumb-dsc.tk/support)
+if It shows any error Contact us on our [Discord Server](https://discord.gg/kBXYKyeWgC)
 # Slash-Commands Installation
  If you want to register your bot's Slash-commands then go on config.js and in registercommands Remove false and write true there.
     This is not tested Yet so if you get Any error in that use Gui which is made by my one of Favourites "Androz" Website - https://slash-commands-gui.netlify.app/
