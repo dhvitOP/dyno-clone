@@ -1,7 +1,7 @@
 const { model } = require('mongoose');
-
+const config = require("../../config.js");
 class GeneralModule {
-  prefix = '.';
+  prefix = config.prefix;
   blacklistedChannelIds = [];
 }
 
