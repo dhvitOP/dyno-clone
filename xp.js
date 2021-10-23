@@ -13,7 +13,9 @@ const config1 = require('./utils/gw-config.json');
 
 const client = new Discord.Client();
 client.slash = require("./utils/slash-commands.js");
-module.exports = client;
+module.exports = {
+	client: client
+};
 const http = require("http");
 console.log("\nLoading...");
 console.log("If This Take Too long make sure u have add right token!");
