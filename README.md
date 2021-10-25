@@ -6,7 +6,7 @@ Removed Registering of Slash Commands Because of error
 # Preview
 https://dyno-clone.dhvitop.repl.co
 # Contact Us
-https://discord.gg/kBXYKyeWgC Join Discord and My username will be Dhvit
+https://discord.gg/FafYfmmg4Q Join Discord and My username will be Dhvit
 ## Features 
 This bot Also Supports Many Slash-Commands
 This Bot Supports :
@@ -28,7 +28,7 @@ Maybe Ubuntu
 ## Size 
 This Project Size is 400mb (Counted With Database)
 ## Help
-You can Join Our Support Server - [Support Server](https://www.dumb-dsc.tk/support)
+You can Join Our Support Server - [Support Server](https://discord.gg/FafYfmmg4Q)
 ## Installation
 # Installing
 # Self Hosting
@@ -114,7 +114,7 @@ After Installing The Packages in console Type `node xp.js`
 If the Console Shows Port is running on <anything> And Logged in as < Your Bot name>
 **If Your Console Shows Anything from up then Your Bot is ready and you can use it**
 # Error
-if It shows any error Contact us on our [Discord Server](https://discord.gg/kBXYKyeWgC)
+if It shows any error Contact us on our [Discord Server](https://discord.gg/FafYfmmg4Q)
 # Slash-Commands Installation
  If you want to register your bot's Slash-commands then go on config.js and in registercommands Remove false and write true there.
     This is not tested Yet so if you get Any error in that use Gui which is made by my one of Favourites "Androz" Website - https://slash-commands-gui.netlify.app/
