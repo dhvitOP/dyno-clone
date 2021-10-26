@@ -3,6 +3,8 @@ Dumb Bot is A MultiPurpose Discord Bot with 214 Commands And 85% Of Database is 
 I am Wishing That Adamjr Will see this so please star it  [@adamjr](https://github.com/theADAMJR)
 # Notice 
 Removed Registering of Slash Commands Because of error
+Please Star it People is forking more than starring this Project, starring this project means giving us some motivation to develop good things like this<br>
+Also Check out my new open source Project of Discord bot Maker like botghost.com [Discord-bot-maker](https://github.com/dhvitOP/Discord-Bot-Maker-Like-Botghost.com-TS-Version)
 # Preview
 https://dyno-clone.dhvitop.repl.co
 # Contact Us
