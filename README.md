@@ -1,3 +1,4 @@
+# Support For This Repository is now outdated as Discord.js V12 is also outdated.
 ## Dumb Bot Source Code
 Dumb Bot is A MultiPurpose Discord Bot with 214 Commands And 85% Of Database is Based on quick.db
 I am Wishing That Adamjr Will see this so please star it  [@adamjr](https://github.com/theADAMJR)
